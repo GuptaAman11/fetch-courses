@@ -9,6 +9,7 @@ const Cards = ({course}) => {
 
     const getCourseIntoSingleArray = () => {
         let allCourses = [];
+        console.log("allcousre", allCourses)
         if (course) {
           Object.values(course.data).forEach((array) => {
             array.forEach((courseValue) => {
@@ -20,11 +21,13 @@ const Cards = ({course}) => {
       };
     const getCourseValue = getCourseIntoSingleArray()
   return (
-    <div>
-      <div>
+    <div className='flex mt-[15px] bg-yellow-300 '>
+      <div className='flex overflow-auto flex-wrap space-x-5 space-y-4 mt-2 justify-center'>
+        <div></div>
         {
-            getCourseValue.map((allCoures ,index)=>(
-                <Card1 key={index} allCoures = {allCoures} />
+            getCourseValue.map((allCourses ,index)=>(
+                <Card1 key={index}  allCourses = {allCourses} />
+
             )
             )
         }

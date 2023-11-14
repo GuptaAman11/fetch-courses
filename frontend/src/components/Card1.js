@@ -1,10 +1,16 @@
 import React from 'react'
 
-const Card1 = ({allCoures}) => {
+const Card1 = ({allCourses}) => {
 
   return (
-    <div>
-      <h1>{allCoures.title}</h1>
+    <div className='w-[300px] flex flex-wrap overflow-hidden border-2 border-black '>
+      <div>
+        <img src={allCourses.image.url} />
+      </div>
+      <div>
+        <h1>{allCourses.title}</h1>
+        <p>{allCourses.description}</p>
+      </div>
     </div>
   )
 }

@@ -5,9 +5,13 @@ import Fillter from './components/Fillter';
 
 function App() {
   return (
-    <div>
+    <div className=' bg-gray-700'>
+      <div>
       <Navbar />
+      </div>
+      <div>
       <Fillter />
+      </div>
     </div>
   );
 }

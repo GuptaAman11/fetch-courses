@@ -5,7 +5,19 @@ export const Value = [
     } ,
     {
         id : 2,
-        title:"dev"
+        title:"Development"
+    },
+    {
+        id :"3",
+        title : "Bussiness"
+    } ,
+    {
+        id :"3",
+        title : "Design"
+    } ,
+    {
+        id :"3",
+        title : "LifeStyle"
     }
 ]
 
